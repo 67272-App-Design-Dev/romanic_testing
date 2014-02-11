@@ -1,4 +1,4 @@
-# romanic
+# romanic_testing
 
 
 ### Overview
@@ -11,7 +11,7 @@ The romanic module has two sub-modules: *RomanicIntegers* and *RomanicStrings*. 
 
 ### Getting the gem
 
-If you want to really use the functionality (*not that Roman numeral conversions are a high demand operation, but who knows…*), installing this gem is pretty simple -- just type on the command line:
+If you want to really use the functionality (*not that Roman numeral conversions are a high demand operation, but who knows what nefarious purposes you could use it for*), installing this gem is pretty simple -- just type on the command line:
 
 ```  
 $ gem install romanic 
