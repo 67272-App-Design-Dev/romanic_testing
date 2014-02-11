@@ -55,11 +55,4 @@ module Romanic
   end
 end
 
-# Add methods to the appropriate classes
-# Fixnum.send :include, Romanic::RomanicIntegers
-# String.send :include, Romanic::RomanicStrings
-
-# Quick demonstration ...
-# puts "XXXVII".from_roman
-# puts 2012.to_roman
 
