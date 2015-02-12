@@ -60,6 +60,6 @@ end
 # String.send :include, Romanic::RomanicStrings
 
 # Quick demonstration ...
-# puts "XXXVII".from_roman
-# puts 2014.to_roman
+# puts "XLIX".from_roman
+# puts 2015.to_roman
 
