@@ -2,15 +2,14 @@
 require "./romanic"
 # use minitest (my fav test library)
 require "minitest/autorun"
-# use turn to format tests in nicer way
-require "turn/autorun"
+
 
 # Mix the Romanic methods into their respective classes
 Fixnum.send :include, Romanic::RomanicIntegers
 String.send :include, Romanic::RomanicStrings
 
 # Now time to test...
-class TestRoman < MiniTest::Unit::TestCase
+class TestRoman < MiniTest::Test
 
   def test_conversion_to_roman_numerals_works
     assert_equal('I', 1.to_roman)
