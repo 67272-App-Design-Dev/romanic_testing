@@ -4,7 +4,7 @@ require "./romanic"
 require "minitest/autorun"
 
 # Mix the Romanic methods into their respective classes
-Fixnum.send :include, Romanic::RomanicIntegers
+Integer.send :include, Romanic::RomanicIntegers
 String.send :include, Romanic::RomanicStrings
 
 # Now time to test...

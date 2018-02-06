@@ -28,7 +28,7 @@ module Romanic
     # Convert integers to roman numerals
     def to_roman
       number = self
-      return nil unless number.class == Fixnum
+      return nil unless number.class == Integer
       return nil unless number > 0 and number < 5000
       ROMAN_LOOKUP.inject("") do |result, (roman, arabic)|
         # divmod() returns array of quotient and modulus
