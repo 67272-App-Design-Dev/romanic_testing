@@ -16,7 +16,7 @@
 module Romanic
 
   # some initial setup is necessary...
-  IS_ROMAN = /^(?=.)M*(D?C{0,3}|C[DM])(L?X{0,3}|X[LC])(V?I{0,3}|I[VX])$/  
+  IS_ROMAN = /^[MDCLXVI]+$/   # hope this works...
   NUMERAL_ARABIC = [  1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
   NUMERAL_ROMANS = %w(M     CM   D    CD   C    XC  L   XL   X IX  V IV  I)
   
@@ -55,4 +55,12 @@ module Romanic
   end
 end
 
+
+# Add methods to the appropriate classes
+Integer.send :include, Romanic::RomanicIntegers
+String.send :include, Romanic::RomanicStrings
+
+# Quick demonstration ...
+puts "XLIX".from_roman
+puts 2015.to_roman
 

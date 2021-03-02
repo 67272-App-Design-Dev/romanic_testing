@@ -3,6 +3,7 @@ require "./romanic"
 # use minitest (my fav test library)
 require "minitest/autorun"
 
+
 # Mix the Romanic methods into their respective classes
 Integer.send :include, Romanic::RomanicIntegers
 String.send :include, Romanic::RomanicStrings
