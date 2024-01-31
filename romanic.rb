@@ -10,7 +10,6 @@
 # More information about the system of Roman numerals can be found at:
 # http://www.novaroma.org/via_romana/numbers.html
 
-# Potential solution to Programming Challenge 2
 # =====================================================
 
 module Romanic
